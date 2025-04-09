@@ -1,0 +1,12 @@
+.headerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #501b1b;
+    padding: 30px;
+}
+
+.headerLogo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
