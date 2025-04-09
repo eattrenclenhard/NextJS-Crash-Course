@@ -1,9 +1,12 @@
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div className={styles.headerWrapper}>
-      <h1 className={styles.headerLogo}>NextJS Course</h1>
+      <Link href="/" className={styles.headerLogo}>
+        NextJS Course
+      </Link>
     </div>
   );
 };
