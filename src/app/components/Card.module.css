@@ -1,0 +1,67 @@
+/* modular base style *refer below to learn why we have to include .module in the name of our css file  */
+.card {
+    border: 1px solid #9b9b9b;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.card:hover {
+    border: 1px solid #000;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: blueviolet
+}
+
+.cardText {
+    font-size: 1.2rem
+}
+
+/* When you name a CSS file with the `.module.css` (or `.module.scss`, etc.) extension in a Next.js project, it tells Next.js to treat that CSS file as a CSS Module. This has several important impacts:
+
+1.  **Automatic CSS Modules:** Next.js automatically processes CSS Modules. You don't need to configure anything extra (like Webpack loaders) to enable CSS Modules for these files.
+
+2.  **Local Scope by Default:** CSS Modules provide local scoping of CSS class names. This means that the class names you define in a `.module.css` file are automatically transformed to be unique to that specific component. This helps prevent naming collisions and unintended style overrides between different parts of your application.
+
+    *   For example, if you have a class named `.button` in `MyComponent.module.css`, Next.js will transform it into something like `MyComponent_button__abc123`. This ensures that the style only applies to elements within `MyComponent`.
+
+3.  **CSS Class Name Transformation:** When you import a CSS Module into a React component, you receive an object where the keys are the original class names, and the values are the transformed, locally scoped class names.
+
+    ```javascript
+    // MyComponent.module.css
+    .title {
+      color: blue;
+    }
+
+    // MyComponent.js
+    import styles from './MyComponent.module.css';
+
+    function MyComponent() {
+      return <h1 className={styles.title}>Hello, World!</h1>;
+    }
+    ```
+
+    In this example, `styles.title` will contain the transformed class name (e.g., `MyComponent_title__abc123`).
+
+4.  **Improved Maintainability:** By scoping styles locally, CSS Modules make your CSS more modular and easier to maintain. You can refactor components without worrying about accidentally breaking styles in other parts of your application.
+
+5.  **Dead Code Elimination:**  Next.js can potentially eliminate unused CSS from CSS Modules during production builds, further optimizing your application's performance.
+
+6.  **No Global Styles:** CSS Modules are designed for component-level styling. If you need global styles that apply to the entire application, you should place those in regular CSS files (without the `.module.css` extension) and import them in your `_app.js` file or use a global stylesheet approach.
+
+**In Summary:**
+
+Using `.module.css` (or a similar extension) in Next.js:
+
+*   Enables CSS Modules automatically.
+*   Provides local scoping of CSS class names.
+*   Transforms CSS class names to avoid collisions.
+*   Improves CSS maintainability.
+*   Allows for potential dead code elimination.
+*   Distinguishes component-level styles from global styles.
+
+This approach is generally recommended for most component-level styling in Next.js projects. */
