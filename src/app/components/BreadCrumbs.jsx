@@ -9,7 +9,7 @@ const BreadCrumbs = ({ topicName }) => {
           Topics
         </Link>
         <div>{"->"}</div>
-        <div>{topicName}</div>
+        <div>{decodeURIComponent(topicName)}</div>
       </div>
     </div>
   );

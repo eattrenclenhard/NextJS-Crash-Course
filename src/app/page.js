@@ -4,17 +4,17 @@ import Card from "./components/Card";
 
 const topics = [
   {
-    title: "Server-side rendering",
+    title: "Server-side Rendering",
     description:
       "Server-side rendering (SSR) in Next.js allows for the pre-rendering of React components on the server before sending the final HTML to the client, improving performance and SEO.",
   },
   {
-    title: "Static site generation",
+    title: "Static Site Generation",
     description:
       "Static site generation (SSG) in Next.js allows for the pre-rendering of React components at build time, improving performance and SEO.",
   },
   {
-    title: "Incremental static regeneration",
+    title: "Incremental Static Regeneration",
     description:
       "Incremental static regeneration (ISR) in Next.js allows for the pre-rendering of React components at build time, with the ability to re-generate them at runtime when new data is available.",
   },
