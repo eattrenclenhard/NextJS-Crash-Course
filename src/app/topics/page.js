@@ -1,6 +1,7 @@
 const Topic = () => {
   return <div>Topic</div>;
 };
+
 export default Topic;
 
 // in nextjs, when I do not specify style for my component, global.css will activate?

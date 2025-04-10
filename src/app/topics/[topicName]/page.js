@@ -4,7 +4,7 @@
 // this page acts as a layout/template for all the pages inside the topics folder
 
 const Topic = ({ params: { topicName } }) => {
-  console.log(topicName);
-  return <div>{topicName}</div>;
+  // console.log(topicName);
+  return <div className="container"></div>;
 };
 export default Topic;

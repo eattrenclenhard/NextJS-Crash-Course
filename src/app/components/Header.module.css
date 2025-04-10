@@ -1,7 +1,7 @@
 .headerWrapper {
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     border-bottom: 1px solid #501b1b;
     padding: 30px;
 }
